@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Contact{% endblock %}
+
+{% block content %}
+    <h2>Add New Contact</h2>
+    
+    <form method="post" action="{{ url_for('add_contact') }}">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+        
+        <div class="form-buttons">
+            <button type="submit" class="btn save">Save Contact</button>
+            <a href="{{ url_for('index') }}" class="btn cancel">Cancel</a>
+        </div>
+    </form>
+{% endblock %}

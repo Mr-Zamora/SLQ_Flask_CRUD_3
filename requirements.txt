@@ -1,0 +1,13 @@
+# Core Requirements
+Flask==2.3.3
+Werkzeug==2.3.7
+Jinja2==3.1.2
+itsdangerous==2.1.2
+click==8.1.7
+
+# Development (optional)
+python-dotenv==1.0.0  # For environment variable management
+pytest==7.4.0        # For testing
+
+# Database
+# Note: SQLite comes with Python standard library
